@@ -26,14 +26,6 @@
 }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg?38423245#fontello') format('svg');
-  }
-}
-*/
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   font-family: "fontello";
@@ -201,6 +193,9 @@ textarea {
 }
 button {
   overflow: visible;
+}
+button:focus {
+  outline: none;
 }
 button,
 select {
@@ -1299,16 +1294,6 @@ hr {
   display: none;
 }
 /* Slider */
-/* Icons */
-/*@font-face
-{
-    font-family: 'slick';
-    font-weight: normal;
-    font-style: normal;
-
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
-}*/
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -2799,6 +2784,9 @@ div[class*='__name'] {
 .contacts__phones {
   padding-bottom: 6px;
 }
+.contacts.contacts_marg-bott-none {
+  margin-bottom: -2px;
+}
 .contacts__header.contacts__header_without-pseudo {
   margin-bottom: 0 !important;
 }
@@ -2902,7 +2890,7 @@ div[class*='__name'] {
   display: block;
   width: 100%;
   height: 1px;
-  background: #000;
+  background: #959595;
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -3006,7 +2994,7 @@ div[class*='__name'] {
   width: 100%;
   margin-top: 40px;
   resize: none;
-  height: 30px;
+  min-height: 30px;
   overflow: hidden;
   margin-bottom: 45px;
   font-size: 14px;
@@ -3546,6 +3534,7 @@ div[class*='__name'] {
 .relocation.relocation_all-services .relocation-block {
   min-height: 308px;
   cursor: pointer;
+  border: 0;
 }
 .relocation.relocation_all-services .relocation-block__text {
   margin-top: 40px;

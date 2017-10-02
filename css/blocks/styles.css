@@ -915,7 +915,7 @@ div[class*='__name'] {
   width: 100%;
   margin-top: 40px;
   resize: none;
-  height: 30px;
+  min-height: 30px;
   overflow: hidden;
   margin-bottom: 45px;
   font-size: 14px;
@@ -1455,6 +1455,7 @@ div[class*='__name'] {
 .relocation.relocation_all-services .relocation-block {
   min-height: 308px;
   cursor: pointer;
+  border: 0;
 }
 .relocation.relocation_all-services .relocation-block__text {
   margin-top: 40px;

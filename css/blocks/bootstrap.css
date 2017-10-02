@@ -130,6 +130,9 @@ textarea {
 button {
   overflow: visible;
 }
+button:focus {
+  outline: none;
+}
 button,
 select {
   text-transform: none;

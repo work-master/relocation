@@ -82,7 +82,7 @@
 			</div>	
 		</section>
 
-		<section class="contacts">
+		<section class="contacts contacts_marg-bott-none">
 			<div class="col-sm-6">
 				<div class="row map-block">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8984.6316088272!2d37.648435867285556!3d55.73838538072476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCw!5e0!3m2!1sru!2sru!4v1506410763315" width="100%" height="470" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -175,31 +175,33 @@
 			<button class="close-button" id="closeButton"></button>
 			<div class="popup__header">Оформить заявку</div>
 			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-4">
-						<input type="text" class="popup__input" placeholder="Ваше имя*">
-					</div>
-					<div class="col-md-4">
-						<div class="row col-md-padd">
-							<input type="text" class="popup__input" id="phone" placeholder="Телефон*">
+				<form action="">
+					<div class="row">
+						<div class="col-md-4">
+							<input type="text" class="popup__input" placeholder="Ваше имя*">
+						</div>
+						<div class="col-md-4">
+							<div class="row col-md-padd">
+								<input type="text" class="popup__input" id="phone" placeholder="Телефон*">
+							</div>
+						</div>
+						<div class="col-md-4">
+							<input type="text" class="popup__input" placeholder="Ваш e-mail">
 						</div>
 					</div>
-					<div class="col-md-4">
-						<input type="text" class="popup__input" placeholder="Ваш e-mail">
+					<div class="row">
+						<div class="col-xs-12">
+							<textarea name="" id="" cols="30" rows="1" class="popup__area" placeholder="Комментарий"></textarea>
+						</div>
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12">
-						<textarea name="" id="" cols="30" rows="1" class="popup__area" placeholder="Комментарий"></textarea>
+					<button class="popup__submit">Отправить</button>
+					<div class="checkbox">
+						<input type="checkbox" id="checkboxSecond">
+						<label for="checkboxSecond">
+							Даю согласие на <a href="#" class="popup__link">обработку персональных данных</a>
+						</label>
 					</div>
-				</div>
-				<button class="popup__submit">Отправить</button>
-				<div class="checkbox">
-					<input type="checkbox" id="checkboxSecond">
-					<label for="checkboxSecond">
-						Даю согласие на <a href="#" class="popup__link">обработку персональных данных</a>
-					</label>
-				</div>
+				</form>
 			</div>
 		</div>
 	</div>

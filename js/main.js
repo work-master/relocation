@@ -153,12 +153,12 @@ $(document).ready(function(){
       if ( $(this).scrollTop() > 120 ){
         $('#arrow-up').fadeIn('slow');
       } else {
-        $('#arrow-up').fadeOut('400');
+        $('#arrow-up').fadeOut('slow');
       }
-    }, 405);
+    }, 505);
   });
   $('#arrow-up').on('click', function(){
-    $('html, body').animate({scrollTop: 0}, 400);
+    $('html, body').animate({scrollTop: 0}, 500);
   });
 
   //Аккордеон
@@ -188,6 +188,6 @@ $(document).ready(function(){
   });
 
   //Маска телефона
-  $('#phone, #phoneNumber').mask("+7(999) 999-9999");
+  $('#phone, #phoneNumber, #sidebarPhone').mask("+7(999) 999-9999");
   
 });
