@@ -1096,10 +1096,11 @@ div[class*='__name'] {
   text-transform: uppercase;
   padding-left: 18px;
   padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 24px;
   margin-top: 28px !important;
   margin-bottom: 10px !important;
-  height: 54px;
+  min-height: 54px;
   width: 100%;
   max-width: 255px;
 }
